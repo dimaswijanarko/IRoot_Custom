@@ -10,7 +10,7 @@ import org.json.JSONObject;
 import java.lang.Exception;
 import java.io.File;
 
-import com.scottyab.rootbeer.RootBeer;
+//import com.scottyab.rootbeer.RootBeer;
 
 
 /**
@@ -26,19 +26,10 @@ public class IRoot extends CordovaPlugin {
                 callbackContext.success(isDeviceRooted() ? 1 : 0);
                 return true;
             } catch (Exception e) {
-                callbackContext.error("Error: N/A");
+                callbackContext.error("N/A");
                 return false;
             }
-        } else if (action.equals("isRootedRedBeer")) {
-                           try {
-                               RootBeer rootBeer = new RootBeer(this.cordova.getActivity().getApplicationContext());
-                               callbackContext.success(rootBeer.isRooted() ? 1 : 0);
-                               return true;
-                           } catch (Exception e) {
-                               callbackContext.error("Error: N/A");
-                               return false;
-                           }
-                       }
+        }
         return false;
     }
 

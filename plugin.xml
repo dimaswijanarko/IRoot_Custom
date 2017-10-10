@@ -32,6 +32,6 @@
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
         <source-file src="src/android/IRoot.java" target-dir="src/de/cyberkatze/iroot"/>
-        <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference" />
+        <!-- <framework src="src/android/build-extras.gradle" custom="true" type="gradleReference" /> -->
     </platform>
 </plugin>
